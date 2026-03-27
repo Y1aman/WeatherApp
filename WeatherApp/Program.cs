@@ -21,5 +21,5 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-
+app.MapGet("/weather/{city}", (string city) => $"Weather data for {city} will be here soon!");
 app.Run();
